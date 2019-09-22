@@ -1,4 +1,30 @@
- class student {
+class org {
+    constructor(name){
+        this.name = name;
+    }
+    student(){
+        console.log(`${this.name}`);
+    }
+
+    dept(){
+        console.log(`${this.name}`);
+    }
+}
+class dept extends org{
+    constructor(name){
+        this.name = name;
+    }
+    maths(){
+        console.log(`${this.name}`);
+    }
+
+    bio(){
+        console.log(`${this.name}`);
+    }
+}
+
+
+class student extends dept {
     constructor(name){
         this.name = name;
     }
@@ -20,15 +46,4 @@
     }
 }
 
-class dept extends student{
-        constructor(name){
-            this.name = name;
-        }
-        maths(){
-            console.log(`${this.name}`);
-        }
 
-        bio(){
-            console.log(`${this.name}`);
-        }
-}
